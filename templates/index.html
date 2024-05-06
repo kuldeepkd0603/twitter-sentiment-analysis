@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="bg-gray-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <a href="#" class="text-white font-bold text-xl">Sentiment Analysis</a>
+            </div>
+            <div>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="bg-cover bg-center h-96 flex items-center justify-center" style="background-image: url(static/img/4.jpg); background-size: contain; background-repeat: no-repeat; background-color: #2E0D7E;">
+        <h1 class="text-5xl font-bold uppercase text-center tracking-wide"></h1>
+    </div>
+
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-8">Sentiment Analysis</h1>
+        <form action="/predict" method="post" class="mb-8">
+            <label for="text" class="block mb-2 text-3xl font-bold mt-24">Enter text for sentiment analysis:</label>
+            <textarea id="text" name="text" rows="4" cols="50" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500" style="color: black; background-color:white ;"></textarea>
+            <button type="submit" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:border-blue-300">Submit</button>
+        </form>
+        
+        {% if prediction %}
+        <div class="mb-8">
+            <h2 class="text-xl font-bold mb-2">Result:</h2>
+            <p class="text-lg font-bold">{{ prediction }}</p>
+        </div>
+        {% endif %}
+        
+        <div class="flex justify-center gap-4 items-center">
+            <div class="mb-8 flex flex-col">
+                <img src="static/img/1.png" alt="Sentiment Analysis" class="mb-4 rounded-lg w-1/2 mx-auto">
+                <h2 class="text-xl font-bold mb-2 text-center">About Sentiment Analysis</h2>
+                <p class="mb-4 px-4 mt-6 text-center">Sentiment analysis, also known as opinion mining, is the process of determining the emotional tone behind a series of words, used to gain an understanding of the attitudes, opinions, and emotions expressed within an online mention. It can be applied to text data from various sources, including social media, product reviews, news articles, and more.</p>
+                
+            </div>
+
+            <div class="mb-8 flex flex-col">
+                <img src="static/img/2.jpg" alt="Why Sentiment Analysis?" class="mb-4 rounded-lg w-1/2 mx-auto mb-8">
+                <h2 class="text-xl font-bold mb-2 text-center">Why Sentiment Analysis?</h2>
+                <p class="mb-4 px-4 mt-6 text-center">Sentiment analysis can provide valuable insights for businesses and organizations. By analyzing the sentiment of customer reviews, social media posts, and other text data, companies can better understand customer opinions, identify trends, gauge public perception of their products or services, and make data-driven decisions to improve customer satisfaction and brand reputation.</p>
+                
+            </div>
+
+            <div class="mb-8 flex flex-col">
+                <img src="static/img/4.png" alt="How Sentiment Analysis Works" class="mb-4 rounded-lg w-1/2 mx-auto">
+                <h2 class="text-xl font-bold mb-2 text-center">How Sentiment Analysis Works</h2>
+                <p class="mb-4 px-4 mt-6 text-center">Sentiment analysis algorithms use logistic regression techniques to analyze and classify text data into categories such as positive and negative sentiment. These algorithms can range from simple rule-based systems to more advanced machine learning models trained on labeled text data.</p>
+          
+            </div>
+        </div>
+
+    </div>
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-8">Our Team</h1>
+        <center>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/150" alt="Team Member 1" class="mb-4 rounded-full mx-auto">
+                <h2 class="text-xl font-bold mb-2 text-black">name1</h2>
+                <p class="text-gray-700">Manager</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/150" alt="Team Member 2" class="mb-4 rounded-full mx-auto">
+                <h2 class="text-xl font-bold mb-2 text-black">name1</h2>
+                <p class="text-gray-700">Machine learning engineer</p>
+            </div>
+
+        
+        </div>
+    </center>   
+    </div>
+    
+    <footer class="bg-gray-800 py-8 mt-24">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div>
+                <p class="text-xl font-semibold">Sentiment Analysis</p>
+                <p class="text-gray-400">© 2024 All rights reserved</p>
+            </div>
+            <div>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
