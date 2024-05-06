@@ -1,4 +1,4 @@
-"# twitter-sentiment-analysis" 
+## twitter-sentiment-analysis
 Description
 The Twitter Sentiment Analysis project aims to analyze the sentiment of text input from Twitter data, classifying it as either positive or negative. The project utilizes machine learning techniques to process and analyze text data, providing insights into the sentiment expressed in tweets.
 
@@ -28,10 +28,10 @@ Screenshots
 
 
 # Description of the screenshot
-![Screenshot of Twitter Sentiment Analysis](static/img/IMG12.jpg)
+![Screenshot of Twitter Sentiment Analysis](static/img/IMG2.jpg)
 
 # Description of the screenshot
-![Screenshot of Twitter Sentiment Analysis](static/img/IMG13.jpg)
+![Screenshot of Twitter Sentiment Analysis](static/img/IMG3.jpg)
 
 
 # Future Enhancements
