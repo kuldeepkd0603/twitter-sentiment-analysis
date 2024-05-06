@@ -24,11 +24,14 @@ HTML/CSS: Markup and styling languages used for designing the user interface of 
 Screenshots
 
 # Description of the screenshot
-![Screenshot of Twitter Sentiment Analysis](screenshots/screenshot1.png)
+![Screenshot of Twitter Sentiment Analysis](static/img/IMG1.jpg)
 
 
 # Description of the screenshot
-![Screenshot of Twitter Sentiment Analysis](screenshots/screenshot1.png)
+![Screenshot of Twitter Sentiment Analysis](static/img/IMG12.jpg)
+
+# Description of the screenshot
+![Screenshot of Twitter Sentiment Analysis](static/img/IMG13.jpg)
 
 
 # Future Enhancements
